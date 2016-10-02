@@ -1,0 +1,6 @@
+sudo: required
+dist: trusty
+
+script:
+  - git clone git@github.com:citueda/RaspberryPiMouse.git 
+  - reboot
