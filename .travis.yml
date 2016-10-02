@@ -2,10 +2,10 @@ sudo: required
 dist: trusty
 
 script:
-  - pwd
   - sudo apt-get install linux-headers-$(uname -r)
+  - cd ..
   - git clone https://github.com/citueda/RaspberryPiMouse.git 
   - cd RaspberryPiMouse/utils
   - sudo bash ./build_install.ubuntu14.bash
-  - cd ../../
+  - cd ../../raspimouse_setup
   - sudo bash -evx ./setup.bash

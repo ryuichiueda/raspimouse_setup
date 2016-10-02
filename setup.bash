@@ -2,8 +2,7 @@
 
 #exec 2> /tmp/setup.log
 
-DIR=/home/ubuntu
-[ "$USER" = travis ] && DIR=/home/travis/build/
+DIR=$(dirname $0)/..
 
 cd $DIR/RaspberryPiMouse/src/drivers/
 /sbin/insmod rtmouse.ko
