@@ -9,3 +9,4 @@ script:
   - sudo bash ./build_install.ubuntu14.bash
   - cd ../../raspimouse_setup
   - sudo bash -evx ./setup.bash
+  - bash -evx ./test/travis_test.bash
