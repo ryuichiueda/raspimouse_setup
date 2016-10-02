@@ -6,5 +6,5 @@ script:
   - git clone https://github.com/citueda/RaspberryPiMouse.git 
   - cd RaspberryPiMouse/utils
   - sudo bash ./build_install.ubuntu14.bash
-  - cd ../../raspimouse_setup
+  - cd ../../
   - sudo bash -evx ./setup.bash
