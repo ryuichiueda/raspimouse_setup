@@ -2,6 +2,7 @@ sudo: required
 dist: trusty
 
 script:
+  - sudo apt-get install linux-headers-$(uname -r)
   - sudo crontab ./crontab.conf
   - git clone https://github.com/citueda/RaspberryPiMouse.git 
   - cd RaspberryPiMouse/utils
