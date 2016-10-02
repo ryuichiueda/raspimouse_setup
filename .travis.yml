@@ -3,6 +3,7 @@ dist: trusty
 
 script:
   - git clone https://github.com/citueda/RaspberryPiMouse.git 
+  - cd RaspberryPiMouse/utils
+  - sudo bash ./build_install.ubuntu14.bash
   - sudo reboot
-  - cd RaspberryPiMouse
-  - ls
+  - ls /dev/rt*
